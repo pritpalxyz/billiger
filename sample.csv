@@ -1,4 +1,4 @@
-rating,pageurl,prize,title
+rating,vendors,pageurl,prize,title
 "
                   4,2
-                ",http://www.billiger.de/show/produkt/196735375-Samsung-ME733K.htm,"                58,41 ",Samsung ME733K
+                ","[{'link': 'http://www.billiger.de/common/modules/cmodul?id=597318963', 'vendorname': 'check24.de', 'prize': u'\n        58,41\n        '}, {'link': 'http://www.billiger.de/common/modules/cmodul?id=597381676', 'vendorname': u'Allyouneed.com \u2013 Shopping powered by DHL', 'prize': u'\n        63,84\n        '}, {'link': 'http://www.billiger.de/common/modules/cmodul?id=597382419', 'vendorname': 'Hitmeister', 'prize': u'\n        66,38\n        '}, {'link': 'http://www.billiger.de/common/modules/cmodul?id=597333891', 'vendorname': 'JACOB', 'prize': u'\n        68,60\n        '}, {'link': 'http://www.billiger.de/common/modules/cmodul?id=517667492', 'vendorname': u'Amazon Marketplace Major\xa0Appliances', 'prize': u'\n        73,18\n        '}]",http://www.billiger.de/show/produkt/196735375-Samsung-ME733K.htm,"                58,41 ",Samsung ME733K

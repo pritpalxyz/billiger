@@ -2,6 +2,7 @@
 import scrapy
 from scrapy.http import FormRequest, Request
 from testpro.items import TestproItem
+from bs4 import BeautifulSoup
 
 class TestbilligerSpider(scrapy.Spider):
 	name = "testbilliger"
@@ -25,5 +26,18 @@ class TestbilligerSpider(scrapy.Spider):
 		prize = prize.replace("\r","")
 		prize = prize.replace("\n","")
 		item['prize'] = prize
+
+		vendors = []
+		for ii in response.xpath("//div[@class='offer-row row']").extract():
+			vendordict = {}
+			soup = BeautifulSoup(ii)
+			vendorname = soup.find('div',{'class':'shop-logo'}).find('img').get('title')
+			prize = soup.find('span',{'class':'offer-price'}).text
+			vendorlink =  soup.find('div',{'class':'shop-logo'}).find('a').get('href')
+			vendordict = {'vendorname':vendorname,'prize':prize,'link':vendorlink}
+			vendors.append(vendordict)
+
+			print "*"*100
+		item['vendors'] = vendors
 
 		yield item

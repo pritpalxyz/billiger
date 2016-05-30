@@ -13,4 +13,4 @@ class TestproItem(scrapy.Item):
 	prize = scrapy.Field()
 	rating = scrapy.Field()
 	pageurl = scrapy.Field()
-	
+	vendors = scrapy.Field()
